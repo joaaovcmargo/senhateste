@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Password Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="top">
+
+<h1 id="title">
+🔐 Password Generator
+</h1>
+
+<select id="language">
+
+<option value="pt">Português</option>
+<option value="en">English</option>
+<option value="es">Español</option>
+
+</select>
+
+</div>
+
+<div class="senha">
+
+<input
+type="text"
+id="password"
+readonly>
+
+<button id="copy">
+📋
+</button>
+
+</div>
+
+<div class="slider">
+
+<label id="lengthText">
+Tamanho: 16
+</label>
+
+<input
+type="range"
+min="6"
+max="40"
+value="16"
+id="length">
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox" id="uppercase" checked>
+
+<span id="upperText">
+Letras Maiúsculas
+</span>
+
+</label>
+
+<label>
+
+<input type="checkbox" id="lowercase" checked>
+
+<span id="lowerText">
+Letras Minúsculas
+</span>
+
+</label>
+
+<label>
+
+<input type="checkbox" id="numbers" checked>
+
+<span id="numberText">
+Números
+</span>
+
+</label>
+
+<label>
+
+<input type="checkbox" id="symbols" checked>
+
+<span id="symbolText">
+Símbolos
+</span>
+
+</label>
+
+</div>
+
+<button id="generate">
+
+Gerar Senha
+
+</button>
+
+<div class="strength">
+
+<div id="bar"></div>
+
+<p id="strengthText">
+Muito Forte
+</p>
+
+</div>
+
+<h2 id="suggestionTitle">
+
+Sugestões Fortes
+
+</h2>
+
+<div id="suggestions">
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
